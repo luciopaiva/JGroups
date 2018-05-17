@@ -123,7 +123,7 @@ Building blocks are described in <<user-building-blocks>>.
 
 === The Protocol Stack
 
-The protocol stack containins a number of protocol layers in a bidirectional
+The protocol stack contains a number of protocol layers in a bidirectional
 list. All messages sent and received over the channel have to pass
 through all protocols. Every layer may modify, reorder, pass
 or drop a message, or add a header to a message. A fragmentation
