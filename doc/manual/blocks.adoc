@@ -14,7 +14,7 @@ are located in the `org.jgroups.blocks` package.
 [[MessageDispatcher]]
 === MessageDispatcher
 
-A channels is a simple class _asynchronously_
+A channel is a simple class to _asynchronously_
 send and receive messages. However, a significant number of communication patterns in group communication
 require _synchronous_ communication. For example, a sender would like to send a message to
 the group and wait for all responses. Or another application would like to send a message to the group and
@@ -32,7 +32,7 @@ _sending message requests and correlating message responses_, while RpcDispatche
 with _invoking method calls and correlating responses_. RpcDispatcher extends
 MessageDispatcher, and offers an even higher level of abstraction over MessageDispatcher.
 
-RpcDispatcher is essentially a way to invoke remote procedure calls (RCs) across a cluster.
+RpcDispatcher is essentially a way to invoke remote procedure calls (RPCs) across a cluster.
 
 Both MessageDispatcher and RpcDispatcher sit on top of a channel; therefore an instance of
 MessageDispatcher is created with a channel as argument. It can now be
